@@ -320,12 +320,12 @@
 
 -(void)drawXTextAxis
 {
-//    XLabels
-    CGContextRef context = [[NSGraphicsContext currentContext] graphicsPort];
     // Drawing text
-    CGContextSelectFont(context, "Helvetica", 1, kCGEncodingMacRoman);
-    CGContextSetTextDrawingMode(context, kCGTextFill);
-    CGContextSetFillColorWithColor(context, [_axisColor CGColor]);
+    NSFont *font = [NSFont fontWithName:@"Helvetica" size:10];
+    NSDictionary *attributedString = [NSDictionary dictionaryWithObjectsAndKeys:
+                                      _axisColor, NSForegroundColorAttributeName,
+                                      font, NSFontAttributeName,
+                                      nil];
 
     NSUInteger step = (rect.size.width-(2*kOffsetX))/nbOfItems;
     NSUInteger nbOfTextElements = [xLabels count];
@@ -335,7 +335,7 @@
         if (nbOfTextElements>i){
             NSString *theText = [xLabels objectAtIndex:i];
             int textWidth = [self calcSizeWithFontName:@"Helvetica" FontSize:1 andString:theText];
-            CGContextShowTextAtPoint(context,(kOffsetX + step - (textWidth*5)) + i * step, originY - kOffsetY/2 , [theText cStringUsingEncoding:NSUTF8StringEncoding], [theText length]);
+            [theText drawAtPoint:NSMakePoint((kOffsetX + step - (textWidth*5)) + i * step, originY - kOffsetY/2 ) withAttributes:attributedString];
         }
     }
 }
