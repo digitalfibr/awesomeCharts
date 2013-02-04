@@ -8,6 +8,7 @@
 
 #import "SUGraphView.h"
 #import "MAAttachedWindow.h"
+#import "NSColor+CGColor.h"
 
 @interface SUGraphView ()
 {

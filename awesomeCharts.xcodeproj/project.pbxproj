@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CA3EDBE16BFEAFD0059FE6E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA3EDBD16BFEAFC0059FE6E /* QuartzCore.framework */; };
+		2CA3EDC216BFF8470059FE6E /* NSColor+CGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA3EDC016BFEFED0059FE6E /* NSColor+CGColor.m */; };
 		A98AB3BE16BFBF6300DBEA7E /* awesomeCharts-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A98AB3AC16BFBF6300DBEA7E /* awesomeCharts-Info.plist */; };
 		A98AB3BF16BFBF6300DBEA7E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A98AB3AE16BFBF6300DBEA7E /* Credits.rtf */; };
 		A98AB3C016BFBF6300DBEA7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A98AB3B016BFBF6300DBEA7E /* InfoPlist.strings */; };
@@ -33,6 +35,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2CA3EDBD16BFEAFC0059FE6E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2CA3EDBF16BFEFED0059FE6E /* NSColor+CGColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSColor+CGColor.h"; path = "awesomeCharts/NSColor+CGColor.h"; sourceTree = "<group>"; };
+		2CA3EDC016BFEFED0059FE6E /* NSColor+CGColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSColor+CGColor.m"; path = "awesomeCharts/NSColor+CGColor.m"; sourceTree = "<group>"; };
 		A98AB3AC16BFBF6300DBEA7E /* awesomeCharts-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "awesomeCharts-Info.plist"; sourceTree = "<group>"; };
 		A98AB3AD16BFBF6300DBEA7E /* awesomeCharts-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "awesomeCharts-Prefix.pch"; sourceTree = "<group>"; };
 		A98AB3AF16BFBF6300DBEA7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
@@ -59,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CA3EDBE16BFEAFD0059FE6E /* QuartzCore.framework in Frameworks */,
 				A9A8691816B1A052008A63FD /* Cocoa.framework in Frameworks */,
 				A9A8693816B1A10F008A63FD /* AppKit.framework in Frameworks */,
 			);
@@ -67,6 +73,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CA3EDC316BFFB370059FE6E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2CA3EDBF16BFEFED0059FE6E /* NSColor+CGColor.h */,
+				2CA3EDC016BFEFED0059FE6E /* NSColor+CGColor.m */,
+			);
+			name = Categories;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		A98AB3AB16BFBF6300DBEA7E /* awesomeCharts */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +92,7 @@
 				A98AB3B016BFBF6300DBEA7E /* InfoPlist.strings */,
 				A98AB3B216BFBF6300DBEA7E /* MainMenu.xib */,
 				A98AB3B416BFBF6300DBEA7E /* MAAttachedWindow */,
+				2CA3EDC316BFFB370059FE6E /* Categories */,
 				A98AB3B716BFBF6300DBEA7E /* main.m */,
 				A98AB3B816BFBF6300DBEA7E /* SUAppDelegate.h */,
 				A98AB3B916BFBF6300DBEA7E /* SUAppDelegate.m */,
@@ -125,6 +142,7 @@
 		A9A8691916B1A052008A63FD /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2CA3EDBD16BFEAFC0059FE6E /* QuartzCore.framework */,
 				A9A8691A16B1A052008A63FD /* AppKit.framework */,
 				A9A8691B16B1A052008A63FD /* CoreData.framework */,
 				A9A8691C16B1A052008A63FD /* Foundation.framework */,
@@ -199,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CA3EDC216BFF8470059FE6E /* NSColor+CGColor.m in Sources */,
 				A98AB3C216BFBF6300DBEA7E /* MAAttachedWindow.m in Sources */,
 				A98AB3C316BFBF6300DBEA7E /* main.m in Sources */,
 				A98AB3C416BFBF6300DBEA7E /* SUAppDelegate.m in Sources */,
@@ -261,7 +280,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -285,7 +304,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -301,6 +320,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "awesomeCharts/awesomeCharts-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/awesomeCharts/awesomeCharts-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = awesomeCharts;
 				WRAPPER_EXTENSION = app;
 			};
@@ -317,6 +337,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "awesomeCharts/awesomeCharts-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/awesomeCharts/awesomeCharts-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = awesomeCharts;
 				WRAPPER_EXTENSION = app;
 			};
