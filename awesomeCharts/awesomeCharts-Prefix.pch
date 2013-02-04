@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'essai' target in the 'essai' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
