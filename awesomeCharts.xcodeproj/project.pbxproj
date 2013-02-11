@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2CA3EDBE16BFEAFD0059FE6E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA3EDBD16BFEAFC0059FE6E /* QuartzCore.framework */; };
 		2CA3EDC216BFF8470059FE6E /* NSColor+CGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA3EDC016BFEFED0059FE6E /* NSColor+CGColor.m */; };
+		2CA3EDC616C0013F0059FE6E /* SUGaugesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA3EDC516C0013F0059FE6E /* SUGaugesView.m */; };
+		2CA3EDCC16C004F70059FE6E /* SUGaugesWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA3EDCB16C004F60059FE6E /* SUGaugesWindow.m */; };
+		2CF5D66E16C29AD600AAC4F5 /* SUGauge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF5D66D16C29AD600AAC4F5 /* SUGauge.m */; };
 		A98AB3BE16BFBF6300DBEA7E /* awesomeCharts-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A98AB3AC16BFBF6300DBEA7E /* awesomeCharts-Info.plist */; };
 		A98AB3BF16BFBF6300DBEA7E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A98AB3AE16BFBF6300DBEA7E /* Credits.rtf */; };
 		A98AB3C016BFBF6300DBEA7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A98AB3B016BFBF6300DBEA7E /* InfoPlist.strings */; };
@@ -38,6 +41,12 @@
 		2CA3EDBD16BFEAFC0059FE6E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2CA3EDBF16BFEFED0059FE6E /* NSColor+CGColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSColor+CGColor.h"; path = "awesomeCharts/NSColor+CGColor.h"; sourceTree = "<group>"; };
 		2CA3EDC016BFEFED0059FE6E /* NSColor+CGColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSColor+CGColor.m"; path = "awesomeCharts/NSColor+CGColor.m"; sourceTree = "<group>"; };
+		2CA3EDC416C0013F0059FE6E /* SUGaugesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SUGaugesView.h; path = awesomeCharts/SUGaugesView.h; sourceTree = "<group>"; };
+		2CA3EDC516C0013F0059FE6E /* SUGaugesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SUGaugesView.m; path = awesomeCharts/SUGaugesView.m; sourceTree = "<group>"; };
+		2CA3EDCA16C004F60059FE6E /* SUGaugesWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SUGaugesWindow.h; path = awesomeCharts/SUGaugesWindow.h; sourceTree = "<group>"; };
+		2CA3EDCB16C004F60059FE6E /* SUGaugesWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SUGaugesWindow.m; path = awesomeCharts/SUGaugesWindow.m; sourceTree = "<group>"; };
+		2CF5D66C16C29AD600AAC4F5 /* SUGauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SUGauge.h; path = awesomeCharts/SUGauge.h; sourceTree = "<group>"; };
+		2CF5D66D16C29AD600AAC4F5 /* SUGauge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SUGauge.m; path = awesomeCharts/SUGauge.m; sourceTree = "<group>"; };
 		A98AB3AC16BFBF6300DBEA7E /* awesomeCharts-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "awesomeCharts-Info.plist"; sourceTree = "<group>"; };
 		A98AB3AD16BFBF6300DBEA7E /* awesomeCharts-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "awesomeCharts-Prefix.pch"; sourceTree = "<group>"; };
 		A98AB3AF16BFBF6300DBEA7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
@@ -83,6 +92,28 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		2CF5D66F16C29AE200AAC4F5 /* Gauges */ = {
+			isa = PBXGroup;
+			children = (
+				2CF5D66C16C29AD600AAC4F5 /* SUGauge.h */,
+				2CF5D66D16C29AD600AAC4F5 /* SUGauge.m */,
+				2CA3EDC416C0013F0059FE6E /* SUGaugesView.h */,
+				2CA3EDC516C0013F0059FE6E /* SUGaugesView.m */,
+			);
+			name = Gauges;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		2CF5D67016C29AFD00AAC4F5 /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				2CA3EDCA16C004F60059FE6E /* SUGaugesWindow.h */,
+				2CA3EDCB16C004F60059FE6E /* SUGaugesWindow.m */,
+			);
+			name = Windows;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		A98AB3AB16BFBF6300DBEA7E /* awesomeCharts */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +124,8 @@
 				A98AB3B216BFBF6300DBEA7E /* MainMenu.xib */,
 				A98AB3B416BFBF6300DBEA7E /* MAAttachedWindow */,
 				2CA3EDC316BFFB370059FE6E /* Categories */,
+				2CF5D67016C29AFD00AAC4F5 /* Windows */,
+				2CF5D66F16C29AE200AAC4F5 /* Gauges */,
 				A98AB3B716BFBF6300DBEA7E /* main.m */,
 				A98AB3B816BFBF6300DBEA7E /* SUAppDelegate.h */,
 				A98AB3B916BFBF6300DBEA7E /* SUAppDelegate.m */,
@@ -223,6 +256,9 @@
 				A98AB3C416BFBF6300DBEA7E /* SUAppDelegate.m in Sources */,
 				A98AB3C516BFBF6300DBEA7E /* SUGraphView.m in Sources */,
 				A98AB3C616BFBF6300DBEA7E /* SULineGraph.m in Sources */,
+				2CA3EDC616C0013F0059FE6E /* SUGaugesView.m in Sources */,
+				2CA3EDCC16C004F70059FE6E /* SUGaugesWindow.m in Sources */,
+				2CF5D66E16C29AD600AAC4F5 /* SUGauge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

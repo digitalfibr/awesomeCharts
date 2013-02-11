@@ -140,4 +140,5 @@
 {
     [self toggleAttachedWindowAtPoint:NSMakePoint(0, 0) withText:@""];
 }
+
 @end

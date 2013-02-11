@@ -13,7 +13,6 @@
 
 -(IBAction)refreshGraph:(id)sender;
 
-
 @property (strong) IBOutlet NSWindow    *window;
 @property (strong) IBOutlet NSTextField *valuesField;
 @property (strong) IBOutlet NSTextField *labelsField;

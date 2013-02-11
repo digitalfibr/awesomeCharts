@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MAAttachedWindow.h"
 #define kOffsetX 50
 #define kOffsetY 50
 #define kCircleRadius 3
@@ -24,6 +25,7 @@
     float originY;
     float originX;
     NSRect rect;
+    MAAttachedWindow *attachedWindow;
 }
 
 -(void)drawAxisAndGrid;

@@ -14,14 +14,11 @@
 
 - (CGColorRef)CGColor
 {
-    
     const NSInteger numberOfComponents = [self numberOfComponents];
     CGFloat components[numberOfComponents];
     CGColorSpaceRef colorSpace = [[self colorSpace] CGColorSpace];
     
     [self getComponents:(CGFloat *)&components];
-    
-
     
     return (__bridge CGColorRef)(__bridge id)CGColorCreate(colorSpace, components);
 }

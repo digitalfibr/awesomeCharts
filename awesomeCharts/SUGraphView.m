@@ -7,7 +7,6 @@
 //
 
 #import "SUGraphView.h"
-#import "MAAttachedWindow.h"
 #import "NSColor+CGColor.h"
 
 @interface SUGraphView ()
@@ -19,7 +18,6 @@
     int _gridType;
     BOOL _hasXDescription;
     BOOL _hasYDescription;
-    MAAttachedWindow *attachedWindow;
 }
 @end
 @implementation SUGraphView
@@ -66,50 +64,54 @@
     _hasXDescription = hasXDescription;
     _hasYDescription = hasYDescription;
     
-    nbOfItems = [[values objectAtIndex:0]count];
-    maxValue = [self maxValue];
-    minValue = [self minValue];
-    maxHorizontGridValue = [self maxHorizontalGridValue];
-    minHorizontGridValue = [self minHorizontalGridValue];
-    
-    // draw axis
-    if (hasXAxis)
-        [self drawXAxis];
-    if (hasYAxis)
-        [self drawYAxis];
-
-    // draw grid
-    if (hasXGrid)
-        [self drawXGrid];
-    if (hasYGrid)
-        [self drawYGrid];
-
-    // draw text
-    if (hasXDescription)
-        [self drawXTextAxis];
-    if (hasYDescription)
-        [self drawYTextAxis];
+    if ([values count]>0){
+        nbOfItems = [[values objectAtIndex:0]count];
+        maxValue = [self maxValue];
+        minValue = [self minValue];
+        maxHorizontGridValue = [self maxHorizontalGridValue];
+        minHorizontGridValue = [self minHorizontalGridValue];
+        
+        // draw axis
+        if (hasXAxis)
+            [self drawXAxis];
+        if (hasYAxis)
+            [self drawYAxis];
+        
+        // draw grid
+        if (hasXGrid)
+            [self drawXGrid];
+        if (hasYGrid)
+            [self drawYGrid];
+        
+        // draw text
+        if (hasXDescription)
+            [self drawXTextAxis];
+        if (hasYDescription)
+            [self drawYTextAxis];
+    }
 }
 
 -(void)drawAxisAndGrid
 {
-    nbOfItems = [values count];
-    maxValue = [self maxValue];
-    minValue = [self minValue];
-    maxHorizontGridValue = [self maxHorizontalGridValue];
-    minHorizontGridValue = [self minHorizontalGridValue];
-    
-    // draw axis
-    [self drawXAxis];
-    [self drawYAxis];
-    
-    // draw grid
-    [self drawXGrid];
-    [self drawYGrid];
-    
-    // draw text
-    [self drawYTextAxis];
-    [self drawXTextAxis];
+    if ([values count]>0){
+        nbOfItems = [[values objectAtIndex:0]count];
+        maxValue = [self maxValue];
+        minValue = [self minValue];
+        maxHorizontGridValue = [self maxHorizontalGridValue];
+        minHorizontGridValue = [self minHorizontalGridValue];
+        
+        // draw axis
+        [self drawXAxis];
+        [self drawYAxis];
+        
+        // draw grid
+        [self drawXGrid];
+        [self drawYGrid];
+        
+        // draw text
+        [self drawYTextAxis];
+        [self drawXTextAxis];
+    }
 }
 
 -(void)drawXAxis
