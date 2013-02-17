@@ -20,6 +20,7 @@
 		A98AB3C616BFBF6300DBEA7E /* SULineGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = A98AB3BD16BFBF6300DBEA7E /* SULineGraph.m */; };
 		A9A8691816B1A052008A63FD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A8691716B1A052008A63FD /* Cocoa.framework */; };
 		A9A8693816B1A10F008A63FD /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A8691A16B1A052008A63FD /* AppKit.framework */; };
+		F4CE121F16CFF03C004F2656 /* SUPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CE121E16CFF03C004F2656 /* SUPieChart.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,6 +58,8 @@
 		A9A8691A16B1A052008A63FD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		A9A8691B16B1A052008A63FD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A9A8691C16B1A052008A63FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F4CE121D16CFF03C004F2656 /* SUPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUPieChart.h; sourceTree = "<group>"; };
+		F4CE121E16CFF03C004F2656 /* SUPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUPieChart.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 				A98AB3BB16BFBF6300DBEA7E /* SUGraphView.m */,
 				A98AB3BC16BFBF6300DBEA7E /* SULineGraph.h */,
 				A98AB3BD16BFBF6300DBEA7E /* SULineGraph.m */,
+				F4CE121D16CFF03C004F2656 /* SUPieChart.h */,
+				F4CE121E16CFF03C004F2656 /* SUPieChart.m */,
 			);
 			path = awesomeCharts;
 			sourceTree = "<group>";
@@ -223,6 +228,7 @@
 				A98AB3C416BFBF6300DBEA7E /* SUAppDelegate.m in Sources */,
 				A98AB3C516BFBF6300DBEA7E /* SUGraphView.m in Sources */,
 				A98AB3C616BFBF6300DBEA7E /* SULineGraph.m in Sources */,
+				F4CE121F16CFF03C004F2656 /* SUPieChart.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
